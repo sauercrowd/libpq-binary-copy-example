@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Numbers{
+    string type = 1;
+    repeated int64 array = 2;
+}
