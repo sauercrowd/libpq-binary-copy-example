@@ -11,4 +11,3 @@ Numbers readNumbers(char* bytes){
     Numbers n;
     n.ParseFromArray(bytes);
 }
-
