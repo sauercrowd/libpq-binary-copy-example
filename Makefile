@@ -25,7 +25,7 @@ protobuf: $(PROTO_DIST_DIR)/lib
 $(PROTO_DIST_DIR)/lib: protolib $(PROTO_DIST_DIR)
 	cd protolib && ./autogen.sh
 	cd protolib && ./configure --prefix=$(PROTO_DIST_DIR)
-	$(MAKE) -j (THREADS) -C protolib
+	$(MAKE) -j $(THREADS) -C protolib
 	$(MAKE) -C protolib install
 
 $(PROTO_DIST_DIR): 
